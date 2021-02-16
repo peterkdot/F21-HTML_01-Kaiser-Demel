@@ -101,9 +101,154 @@
         </tr>
     </table>
 
-    <details><summary>Click here</summary>        
-        We are awesome, thanks.
+    <details><summary>Task description</summary>        
+        <h1>Advanced Exercise | Nested Elements</h1>
+        <p>Create a planner for activities to do in Vienna over the weekend.<br>
+            You will need 3 rows and 3 columns. The first row will contain the headings Day, Morning and Afternoon.<br>
+            The second row contains all the information for Saturday. Place descriptive lists within each of the two empty table cells(the cells for the morning and afternoon).<br>
+            For Sunday, use ordered lists to rank your activities. Within the ordered lists you should nest unordered lists with more information on each activity you plan.</p>
     </details>
+
+    <details>
+        <summary>Show fragments</summary>
+        <textarea cols="200" rows="20">
+            <table> <!-- add a table -->
+                <tr> <!-- start with the first row -->
+                    <th>Here comes the table head for col1</th>
+                    <th>Here comes the table head for col2</th>
+                </tr>
+                <tr> <!-- second row-->
+                    <td>"td" marks the table element</td>
+                    <td>another element</td>
+                </tr>
+                <tr> <!-- third row-->
+                    <td>you can nest lists and other stuff</td>
+                    <td>
+                        <ul> <!-- nest this unordered list in the table cell -->
+                            <li>add list item</li>
+                            <li>add list item</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+
+        </textarea>
+    </details>
+
+    <details>
+        <summary>Show solution</summary>
+        <textarea cols="200" rows="100">
+            
+            <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Nested Elements</title>
+                </head>
+                <body>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="basic1.html">Basic 1</a>
+                        <a href="basic2.html">Basic 2</a>
+                        <a href="basic3.html">Basic 3</a>
+                        <a href="basic4.html">Basic 4</a>
+                        <a href="basic5.html">Basic 5</a>
+                        <a href="intermediate1.html">Intermediate 1</a>
+                        <a href="intermediate2.html">Intermediate 2</a>
+                        <a href="advanced1.html">Advanced 1</a>
+                        <a href="advanced2.html">Advanced 2</a>
+                    </nav>
+
+                    <marquee direction="up" height="50px" >WATCH SHARKNADO NOW!!</marquee>
+
+                    <h1>Corona weekend planner Vienna</h1>
+                    <table> <!-- create table  -->
+                        <tr> <!-- create table row -->
+                            <th>Day</th> <!--  heading for table column -->
+                            <th>Morning</th>
+                            <th>Afternoon</th>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td> <!-- create heading for table column -->
+                            <td>
+                                <dl>
+                                    <dt><b>do groceries</b></dt>
+                                    <dd>buy food for the weekend</dd>
+                                    <dt><b>clean the flat</b></dt>
+                                    <dd>to make it comfy</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <dt><b>have some coffee</b></dt>
+                                    <dd>prepare coffee and have some cake</dd>
+                                    <dt><b>movie time</b></dt>
+                                    <dd>watch sharknado</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td> <!-- Morning Sunday -->
+                                <ol>
+                                    <li>
+                                        <ul> <b>get some newspaper for free ;)</b>
+                                            <li><i>dress up</i></li>
+                                            <li><i>leave the flat</i></li>
+                                            <li><i>check if someone is watching us</i></li>
+                                            <li><i>grab the newspaper</i></li>
+                                            <li><i>walk home</i></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul> <b>clean the car</b>
+                                            <li><i>drive to the car wash center</i></li>
+                                            <li><i>clean the outside of the car</i></li>
+                                            <li><i>clean the inside of the car</i></li>
+                                            <li><i>buy a new "wonder tree" aka fragrance tree</i></li>
+                                            <li><i>drive back to the garage</i></li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td> <!-- Afternoon Sunday -->
+                                <ol>
+                                    <li>
+                                        <ul> <b>create a playlist for the upcoming week</b>
+                                            <li><i>do your research</i></li>
+                                            <li><i>add some music</i>
+                                                <ul>
+                                                    <li>scooter - hyper hyper</li>
+                                                    <li>stefan raab - maschendrahtzaun</li>
+                                                    <li>dave - my ridey</li>
+                                                </ul>
+                                            </li>
+                                            <li><i>give the playlist a fancy name</i></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul> <b>relaxation time</b>
+                                            <li><i>light up incense sticks</i></li>
+                                            <li><i>attend some online yoga class</i></li>
+                                            <li><i>get a beer</i></li>
+                                            <li><i>take a bath</i></li>
+                                            <li><i>go to bed early - haha</i></li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+
+                </body>
+                </html>
+
+        </textarea>
+    </details>
+
 
 </body>
 </html>
