@@ -8,51 +8,65 @@
 </head>
 <body>
 
-    <h1>Do you want to see Sharknado?</h1>
+    <nav>
+        <a href="basic1.html">Basic 1</a>
+        <a href="basic2.html">Basic 2</a>
+        <a href="basic3.html">Basic 3</a>
+        <a href="basic4.html">Basic 4</a>
+        <a href="basic5.html">Basic 5</a>
+        <a href="intermediate1.html">Intermediate 1</a>
+        <a href="intermediate2.html">Intermediate 2</a>
+        <a href="advanced1.html">Advanced 1</a>
+        <a href="advanced2.html">Advanced 2</a>
+    </nav>
 
-    <form>
-        <fieldset> <!-- Rahmen -->
-            <legend>Your personal information</legend> <!-- Name für Rahmen -->
-            <div>Name: 
-                <input type="text" name="name">
-            </div>
-            <div>Age:
-                <input type="number" name="age">
-            </div>
-            <div>Sex:
-                <input type="radio" name="sex" value="female">female
-                <input type="radio" name="sex" value="male">male
-            </div>
-            <div>Do you want the newsletter as well?<br>
-                <input type="checkbox" name="newsletter" checked> Yes, I want the newsletter!
-            </div>
+    <main>
 
-        </fieldset>
+        <h1>Do you want to see Sharknado?</h1>
 
-        <fieldset>
-            <legend>Which day you want to see it?</legend>
-            <div>
-                <select name="day">
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                    <option value="Friday">Friday</option>
-                    <option value="Saturday" selected>Saturday</option>
+        <form>
+            <fieldset> <!-- Rahmen -->
+                <legend>Your personal information</legend> <!-- Name für Rahmen -->
+                <div>Name: 
+                    <input type="text" name="name">
+                </div>
+                <div>Age:
+                    <input type="number" name="age">
+                </div>
+                <div>Sex:
+                    <input type="radio" name="sex" value="female">female
+                    <input type="radio" name="sex" value="male">male
+                </div>
+                <div>Do you want the newsletter as well?<br>
+                    <input type="checkbox" name="newsletter" checked> Yes, I want the newsletter!
+                </div>
 
-                </select>
-            </div>
-            <textarea name="comment" rows="10" cols="30">Enter comment here</textarea>
-            
-        </fieldset>
+            </fieldset>
 
-        <button type="submit">Send</button>
+            <fieldset>
+                <legend>Which day you want to see it?</legend>
+                <div>
+                    <select name="day">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday" selected>Saturday</option>
 
-        <p>Your new friend is waiting for you!</p>
-        <img src="https://www.kino-zeit.de/sites/default/files/styles/filmseite_m/public/news/bild61317.jpg?itok=fn3Z1eNM" alt="sharknado is hungry">
+                    </select>
+                </div>
+                <textarea name="comment" rows="10" cols="30">Enter comment here</textarea>
+                
+            </fieldset>
 
-    </form>
+            <button type="submit">Send</button>
 
+            <p>Your new friend is waiting for you!</p>
+            <img src="https://www.kino-zeit.de/sites/default/files/styles/filmseite_m/public/news/bild61317.jpg?itok=fn3Z1eNM" alt="sharknado is hungry">
+
+        </form>
+    </main>
     
 </body>
 </html>
