@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharknado</title>
+</head>
+<body>
+
+    <h1>Do you want to see Sharknado?</h1>
+
+    <form>
+        <fieldset> <!-- Rahmen -->
+            <legend>Your personal information</legend> <!-- Name für Rahmen -->
+            <div>Name: 
+                <input type="text" name="name">
+            </div>
+            <div>Age:
+                <input type="number" name="age">
+            </div>
+            <div>Sex:
+                <input type="radio" name="sex" value="female">female
+                <input type="radio" name="sex" value="male">male
+            </div>
+            <div>Do you want the newsletter as well?<br>
+                <input type="checkbox" name="newsletter" checked> Yes, I want the newsletter!
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Which day you want to see it?</legend>
+            <div>
+                <select name="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday" selected>Saturday</option>
+
+                </select>
+            </div>
+            <textarea name="comment" rows="10" cols="30">Enter comment here</textarea>
+            
+        </fieldset>
+
+        <button type="submit">Send</button>
+
+        <p>Your new friend is waiting for you!</p>
+        <img src="https://www.kino-zeit.de/sites/default/files/styles/filmseite_m/public/news/bild61317.jpg?itok=fn3Z1eNM" alt="sharknado is hungry">
+
+    </form>
+
+    
+</body>
+</html>
